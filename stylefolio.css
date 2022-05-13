@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body
+{
+    padding: 0 2%;
+    margin: 0;
+    font-family:  'Lato', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    flex-direction:wrap ;
+    justify-content: space-between;
+    align-items:  center;
+    background-color: black;
+    position:sticky;
+    top: 0;
+    padding: 0 1%;
+}
+
+
+
+.profile
+{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img 
+{
+    width: 60px; /* largeur*/ 
+    height:50px; /*hauteur*/
+    border-radius: 50%;
+}
+
+nav .profile h1
+{
+    font-size: 20px;
+    color: white;
+}
+
+nav a
+{
+ color: white;
+ text-decoration: white;
+ 
+}
+
+nav ul 
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li
+{
+   margin-left: 20px;
+   cursor: pointer;
+   border-bottom: 1px solid black;
+   color: white;
+}
+
+nav ul li:hover /* quand on pointe sur la lite a puce */
+{
+ border-bottom-color: white; /*pour modifier la couleur de la bordur*/
+}
+
+
+
+.page 
+{
+   margin: 4%;
+}
+
+.page header
+{
+    margin-top: 5%;
+    max-width: 90%; /*laregeur maximal en gros a ne pas depasser*/
+}
+
+.page header h1
+{
+    margin: 0%;
+    text-transform: uppercase;/*pour mettre le texte en majuscule*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vw;/*sa veut dire qu'on veut qu'elle fasse 6% de la largeur de notre page*/
+}
+
+.page header p
+{
+line-height: 25px;/*pour aggrandir la longeur entre chaque texte*/
+ color: gray;
+}
+
+
+.page header button
+{
+    background-color: inherit;/*sa sert a prendre la couleur de son parents c'est a dire du body*/
+    border:none; 
+    outline:none ;/*enleve la couleur de la bordure quand on clique sur le boutton*/
+    cursor: pointer;
+    padding: 0%;
+    font-size: 15px;
+    font-weight: bold; /*sert a mettre en gras ou en italique ect.. et bold c'est gras*/
+    border-bottom: 1px solid white;
+}
+
+.page header button:hover
+{
+    border-bottom-color: black;
+    color: gray;
+}
+
+
+.page .presentation-image
+{
+    margin-top: 5%;
+}
+.page .presentation-image img
+{
+ width: 100%;
+ height:200% ;
+ 
+}
+
+.page .projet
+{
+    margin-top: 6%;
+
+}
+
+.page .projet h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+     text-transform: uppercase;
+     font-size: 3vw;
+}
+
+.page .projet .Mes-colonnes
+{
+    display: flex;
+    flex-wrap: Wrap;
+    
+
+}
+
+.page .projet .Mes-colonnes .colonne
+{
+   max-width: 30%;
+   margin-right: 1%;
+   margin-left:10%;
+   padding-right: 5%;
+}
+
+.page .projet .Mes-colonnes .colonne h4
+{
+    margin: 0%;
+}
+
+.page .projet .Mes-colonnes .colonne .description
+{
+    font-size: 15px;
+}
+
+
+.page .projet .Mes-colonnes .colonne .date
+{
+    font-size: 15px;
+    color: gray;
+}
+
+footer
+{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;/*pour mettre de l'espace autour des éléments*/
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) 
+{ 
+nav
+{
+   justify-content: center;
+}
+
+nav ul li
+ {
+     display: none;
+ }
+
+ .page header
+ {
+     margin-top: 10%;
+     max-width: 100%;
+ }
+
+  .page .projet
+{
+    margin-top: 15%;
+}
+
+.page .projet h1
+{
+  font-size:20px;
+}
+
+.page .projet .Mes-colonnes .colonne
+{
+   margin-bottom: 20px;
+   max-width: 100%;
+   margin-right: 0%;
+   
+}
+
+
+
+
+
+}

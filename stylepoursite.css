@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body
+{
+   font-family:  'Lato', sans-serif;
+   background-color:black;
+   /*background: url(image/turevoi.jpg.png) no-repeat center/50% 150% black;*/
+   padding: 0; /* le padding sert a enlever ou ajouter des marges a l'intéreieur */
+   margin:0; /* le margin sert a enlever ou ajouter des marges a l'exterieur */
+   
+   color:white;
+}
+
+body .page
+{
+    margin: 20px 80px; /*en haut pour le premier sur les coté pour le deuxieme*/
+}
+
+/*bare de navigation*/
+
+
+/*technique du flex box*/
+nav
+{  
+    display:flex;/* permet de metttre un element par defaut en horizontal*/
+    flex-direction: wrap;/*sert a faire passer un element en dessous quand on reduit la page*/
+    justify-content: space-between;/*permet de gerer l'alignement sur l'axe principal et le space-between sert a mettre un écart entre les bouton et les onglets*/
+    position:sticky; /* sert a positionné la barre de navigation quand on scroll*/
+    top: 0;/*sert a fixé la position tout en haut*/
+    background-color: black;
+    padding: 10px 0px;/*10px en haut et en bas et 0 sur les coté*/
+}
+
+nav .onglets
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+} 
+
+nav .onglets a
+{
+  margin-right: 20px;
+  cursor:pointer;
+  text-decoration: none;
+  color:white;
+
+}
+
+nav .buttons button
+{
+    padding: 13px 20px;
+    
+    border: none;
+    
+    font-size: 15px; /*taille de la police*/
+    cursor: pointer; /*pour mettre le curseur de la souris en pointeur*/
+
+}
+
+.login
+{
+  background-color: inherit;
+  margin-right: 10px;
+  color: grey;
+}
+
+.login:hover
+{
+    color: red;
+}
+
+.register
+{
+  background-color:rgba(213, 45, 45, 0.947);
+  margin-right: 10px;
+  color: white;
+
+}
+/*fin de la bare de navigation*/ 
+
+/*partie header */
+
+header
+{
+    margin-top: 40px;
+    background: url(image/Black\ Car\ iPhone\ Wallpapers\ \ \ Top\ Black\ Car\ iPhone.jpg) no-repeat center/60% 280%;
+}
+
+header h1
+{
+    text-align:center;
+    font-size: 50px;
+    padding: 190px;
+    color: rgba(213, 45, 45, 0.947);
+}
+/*fin du de la partie header*/
+
+/*pied de page*/
+
+footer
+{
+  background-color:rgb(39, 37, 37);
+  padding:25px 100px;
+  color:rgb(103, 99, 99);
+  margin-top: 200px;
+}
+
+.colonnes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+h5
+{
+cursor: pointer;
+}
+
+/*fin de pied de page*/
+
+@media screen and (max-width: 640px)
+{
+    body .page
+    {
+     margin: 45px;
+
+    }
+
+    nav
+    {
+        padding-left: 55px;
+    }
+    nav .onglets
+    {
+        display: none;
+    }
+
+
+    header
+    {
+        margin-top: 200px;
+        background-size: 350px 550px;
+    }
+    
+    header h1 
+    {
+        font-size: 25px;
+        padding: 100px;
+        
+    }
+
+}
